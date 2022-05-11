@@ -7,6 +7,8 @@
 body {
   margin: 0;
   background-color: black;
+  height: 100%;
+  overflow: hidden;
 }
 
 
@@ -36,10 +38,13 @@ body {
 .ball{
   position: absolute;
   background-color: red;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
+
+  width: 5vw;
+  height: 10vh;
+  
   top:  50%;
   left: 50%;
 
 }
+
+

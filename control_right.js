@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    let player_left = document.getElementById('player_right')
+    let player_right = document.getElementById('player_right')
      
     let yPos = 80
     let isMovingUp
