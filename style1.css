@@ -1,7 +1,4 @@
-
-*, *::after, *::before {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
 body {
@@ -47,4 +44,23 @@ body {
 
 }
 
+.score_left{
+  margin: 0;
+  position: absolute;
+  color: #4CAF50;
+  font-family: 'VT323', sans-serif;
+  font-size: 7vh;
+  top: 1vh;
+  left: 12vw;
+}
 
+
+.score_right{
+  position: absolute;
+  margin: 0;
+  color: #4CAF50;
+  font-family: 'VT323', sans-serif;
+  font-size: 7vh;
+  top: 1vh;
+  right: 12vw;
+}

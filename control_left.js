@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         //MOVE UP
     
         if (e.keyCode===87 && !isMovingUp){
-           
             isMovingUp = true
-            console.log("up")
+            //console.log("up")
             stopMovementDown()
             window.requestAnimationFrame(moveUp)
         }
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.keyCode===83){
             if (isMovingUp || isMovingUp === undefined){
                 isMovingUp = false
-                console.log("down")
+                //console.log("down")
                 stopMovementUp()
                 window.requestAnimationFrame(moveDown)
             }
@@ -70,4 +69,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 })
+
 
