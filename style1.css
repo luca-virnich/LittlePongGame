@@ -44,6 +44,18 @@ body {
 
 }
 
+.SP_ball{
+  position: absolute;
+  background-color: red;
+
+  width: 5vw;
+  height: 10vh;
+  
+  top:  50%;
+  left: 50%;
+
+}
+
 .score_left{
   margin: 0;
   position: absolute;
@@ -63,4 +75,14 @@ body {
   font-size: 7vh;
   top: 1vh;
   right: 12vw;
+}
+
+.SP_score{
+  position: absolute;
+  margin: 0;
+  color: #4CAF50;
+  font-family: 'VT323', sans-serif;
+  font-size: 7vh;
+  top: 1vh;
+  right: 46vw;
 }
