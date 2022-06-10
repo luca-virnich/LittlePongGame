@@ -20,10 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-    drawBall()
-    checkCollision()    
-    yPosChecker()
-   
+    //drawBall()
+    //checkCollision()    
+    //yPosChecker()
+
+    
    
    function drawBall (){
         if (isMovingUpRight){   
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (ballX >= 92){ 
 
-            if (ballY > parseInt(yPosRight) && ballY < (parseInt(yPosRight) + 20) ){       // Collision Check Right
+            if (ballY+2.5 > parseInt(yPosRight) && ballY+2.5 < (parseInt(yPosRight) + 20) ){       // Collision Check Right
                 if(isMovingDownRight){
                     nowMovingDownLeft()
                 }
@@ -85,14 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }                       
             else {                                 
                respawnBall()
-               increaseScoreRight()
+               increaseScoreLeft()
             }
         }
 
         
 
         if(ballX <= 3){
-            if (ballY > parseInt(yPosLeft) && ballY < (parseInt(yPosLeft) + 20) ){       // Collision Check Left
+            if (ballY+2.5 > parseInt(yPosLeft) && ballY+2.5 < (parseInt(yPosLeft) + 20) ){       // Collision Check Left
                 if(isMovingDownLeft){
                     nowMovingDownRight()
                 }
@@ -160,19 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-
-
-
-    function debugWithPressO(e) {
-
-        if (e.keyCode===79){
-            
-           console.log(parseInt(yPosLeft) + 20)
-           
-        }
-
-    }
-    document.addEventListener('keyup', debugWithPressO)
 
 
 

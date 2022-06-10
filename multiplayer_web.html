@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pong > Multiplayer</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    
+    <script src="control_right.js" charset="utf-8"></script>
+    <script src="ball.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+</head>
+
+
+
+<body>
+
+  <div class="game-container">
+    <div class="player_left" id="player_left"></div>
+    <div class="player_right" id="player_right"></div>
+    <div class="ball" id="ball"></div>
+    <p class="score_left">score:<a id="score_left">0</a></p>
+    <p class="score_right">score:<a id="score_right">0</a></p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script>  
+    const firebaseConfig = {
+      apiKey: "AIzaSyBzdQTBu99Hn60qgKTymfJeEFWxep8v2IQ",
+      authDomain: "pong-81c39.firebaseapp.com",
+      databaseURL: "https://pong-81c39-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "pong-81c39",
+      storageBucket: "pong-81c39.appspot.com",
+      messagingSenderId: "124890796734",
+      appId: "1:124890796734:web:25083150c171f1e0d404ef"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+    
+</body>
+
+
+
+</html>
