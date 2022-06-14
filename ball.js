@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-    //drawBall()
-    //checkCollision()    
-    //yPosChecker()
+    drawBall()
+    checkCollision()    
+    yPosChecker()
 
     
    
